@@ -214,10 +214,9 @@ Router(config)#ip route 0.0.0.0 0.0.0.0 172.16.5.1
 路由汇总（当联网满足特定情况时）
 Router(config)#ip route 0.0.0.0 0.0.0.0 172.16.5.1
 
-显示主机上路由表
-   netstat -r
-   route print
 22、
+显示主机上的路由表：Windows+R，输入cmd后输入命令：netstat -r、route print
+
 路由表（主机和路由器都有路由表）
   路由转发的过程
     直连网络
