@@ -214,6 +214,14 @@ Router(config)#ip route 0.0.0.0 0.0.0.0 172.16.5.1
 路由汇总（当联网满足特定情况时）
 Router(config)#ip route 0.0.0.0 0.0.0.0 172.16.5.1
 
+配置单区域的OSPF
+Router>en
+Router#conf t
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.0.8 0.0.0.3 area 0
+Router(config-router)#network 192.168.0.16 0.0.0.3 area 0
+Router(config-router)#network 172.18.0.0 0.0.255.255 area 0
+
 22、
 显示主机上的路由表：Windows+R，输入cmd后输入命令：netstat -r、route print
 
